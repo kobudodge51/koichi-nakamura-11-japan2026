@@ -368,6 +368,18 @@ a.vcard:hover{transform:translateY(-3px)}
 #profile h2,.news h2,.gallery h2,.movie h2{display:table;background:#fff;padding:2px 20px 12px;margin:0 0 22px;border-radius:0 14px 14px 14px}
 .news ul{background:#fff;border-radius:16px;padding:6px 22px;box-shadow:0 12px 30px -22px rgba(8,38,95,.5)}
 .profile-grid>div:last-child{background:#fff;border-radius:18px;padding:18px 24px;box-shadow:0 12px 30px -22px rgba(8,38,95,.5)}
+
+/* tab menu */
+nav a{padding:7px 14px;border-radius:999px;transition:background .2s,color .2s}
+nav a:hover{background:#E8F3FF;color:#0B3A8C}
+section[id]{scroll-margin-top:64px}
+@media (max-width:820px){
+header .wrap{flex-wrap:wrap;gap:4px;padding-block:8px 6px}
+nav{display:flex!important;width:100%;flex-wrap:nowrap;overflow-x:auto;gap:8px;padding:2px 0 4px;font-size:12px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+nav::-webkit-scrollbar{display:none}
+nav a{white-space:nowrap;flex:0 0 auto;padding:7px 14px;background:#E8F3FF;color:#0B3A8C}
+section[id]{scroll-margin-top:100px}
+}
 </style>
 </head>
 <body>
@@ -429,8 +441,6 @@ a.vcard:hover{transform:translateY(-3px)}
       <h2>NEWS<small>お知らせ・活動記録</small></h2>
       <ul>
         <li><a href="#"><time>2026.09.19</time><span class="cat">INFO</span><span>特設ページを公開しました</span></a></li>
-        <li><a href="#"><time>2026.00.00</time><span class="cat">MATCH</span><span>【ここに試合結果・大会情報を入力】</span></a></li>
-        <li><a href="#"><time>2026.00.00</time><span class="cat">MEDIA</span><span>【ここにメディア掲載・出演情報を入力】</span></a></li>
       </ul>
     </div>
   </section>
